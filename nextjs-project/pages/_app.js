@@ -1,5 +1,8 @@
-import '@/styles/globals.css'
+import '../styles/globals.css'
+import escapePathDelimiters from "next/dist/shared/lib/router/utils/escape-path-delimiters";
 
-export default function App({ Component, pageProps }) {
-    return <Component {...pageProps} />
+function MyApp({Component, pageProps}) {
+return <Component {...pageProps}/>
 }
+
+export default MyApp;
