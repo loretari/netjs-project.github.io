@@ -1,8 +1,13 @@
 import '../styles/globals.css'
-import escapePathDelimiters from "next/dist/shared/lib/router/utils/escape-path-delimiters";
+import Layout from "../components/layout/Layout";
+
 
 function MyApp({Component, pageProps}) {
-return <Component {...pageProps}/>
+return (
+    <Layout>
+        <Component {...pageProps}/>
+    </Layout>
+);
 }
 
 export default MyApp;
